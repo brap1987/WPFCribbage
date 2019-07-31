@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFCribbage"
         mc:Ignorable="d"
-        Title="SplashScreen" Height="450" Width="800" WindowStyle="None">
-    <Grid>
-        
-    </Grid>
+        Title="SplashScreen" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Border BorderBrush="CornflowerBlue" BorderThickness="3">
+        <Grid Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Image Source="http://cribbagecorner.com/sites/cribbagecorner.com/files/29-hand.png" Grid.Column="1"
+                   Grid.Row="1"/>
+
+
+        </Grid>
+    </Border>
 </Window>
