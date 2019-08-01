@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPFCribbage"
         mc:Ignorable="d"
         Title="SplashScreen" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Border BorderBrush="CornflowerBlue" BorderThickness="3">
+    <Border BorderBrush="GhostWhite" BorderThickness="3">
         <Grid Background="Black"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
