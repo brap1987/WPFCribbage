@@ -6,22 +6,50 @@
         xmlns:local="clr-namespace:WPFCribbage"
         mc:Ignorable="d"
         Title="SplashScreen" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Border BorderBrush="CornflowerBlue" BorderThickness="3">
-        <Grid Background="Black">
+    <Border BorderBrush="GhostWhite" BorderThickness="3">
+        <Grid Background="Black"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="10"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="10" />
             </Grid.RowDefinitions>
-            <Image Source="http://cribbagecorner.com/sites/cribbagecorner.com/files/29-hand.png" Grid.Column="1"
-                   Grid.Row="1"/>
 
 
+            <Image Source="C:\Users\user 1\OneDrive\29 hand.png" Grid.ColumnSpan="5" Grid.RowSpan="5" Grid.Column="1" />
+
+            <TextBlock Text="Welcome To Cribbage" FontSize="36" Foreground="#FFF0FFFE" FontWeight="Bold" 
+                   VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="3" Margin="0" Background="#FF134700" />
+
+            <TextBlock Text="Version 0.0.1" FontSize="24" Foreground="#FFF0FFFE" FontWeight="Bold"
+                   VerticalAlignment="Bottom" Grid.Column="4" Grid.Row="4" Background="Black"  Grid.ColumnSpan="2" HorizontalAlignment="Right"
+                       Margin="0"/>
+
+            <TextBlock Text="Loading....." FontSize="36" Foreground="#FFF0FFFE" FontWeight="Bold"
+                   VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" 
+                       Margin="0" HorizontalAlignment="Center" Width="185"/>
+
+            <Label Content="Backend Dev. Brap1987@gmail.com" FontSize="18" Foreground="#FFF0FFFE" FontWeight="Bold"
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Column="1"  Grid.Row="1"
+                       Margin="0" Grid.ColumnSpan="2" Background="#FF490000">
+            </Label>
+
+            <Label Content="Frontend Dev. Jonathan.j.levercom@gmail.com" FontSize="18" Foreground="Red"
+                   FontWeight="Bold" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="3" 
+                   Margin="0" Background="#FF300000">
+
+            </Label>
         </Grid>
     </Border>
 </Window>
