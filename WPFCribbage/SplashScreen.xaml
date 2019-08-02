@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SplashScreen" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Border BorderBrush="GhostWhite" BorderThickness="3">
-        <Grid Background="Black"  >
+        <Grid Background="Green"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="*" />
@@ -29,24 +29,24 @@
 
             <Image Source="C:\Users\user 1\OneDrive\29 hand.png" Grid.ColumnSpan="5" Grid.RowSpan="5" Grid.Column="1" Grid.Row="1" />
 
-            <TextBlock Text="Welcome To Cribbage" FontSize="36" Foreground="#FFF0FFFE" FontWeight="Bold" 
-                   VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Margin="0" Background="#FF134700" />
+            <TextBlock Text="Welcome To Cribbage" FontSize="36" Foreground="Tomato" FontWeight="Bold" 
+                   VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Margin="0"  />
 
-            <TextBlock Text="Version 0.0.1" FontSize="16" Foreground="#FFF0FFFE" FontWeight="Bold"
-                   VerticalAlignment="Bottom" Grid.Column="4" Grid.Row="4" Background="Black"  Grid.ColumnSpan="2" HorizontalAlignment="Right"
+            <TextBlock Text="Version 0.0.1" FontSize="16" Foreground="Tomato" FontWeight="Bold"
+                   VerticalAlignment="Bottom" Grid.Column="4" Grid.Row="4"   Grid.ColumnSpan="2" HorizontalAlignment="Right"
                        Margin="0"/>
 
-            <TextBlock Text="Loading....." FontSize="24" Foreground="#FFF0FFFE" FontWeight="Bold"
+            <TextBlock Text="Loading....." FontSize="24" Foreground="Tomato" FontWeight="Bold"
                    VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" 
-                       Margin="0" HorizontalAlignment="Center" Width="185" Background="Black"/>
+                       Margin="0" HorizontalAlignment="Center" Width="185" />
 
-            <Label Content="Backend Dev. Brap1987@gmail.com" FontSize="16" Foreground="Gold" FontWeight="Bold"
+            <Label Content="Backend Dev. Brap1987@gmail.com" FontSize="16" Foreground="Tomato" FontWeight="Bold"
                    VerticalAlignment="Bottom" Grid.Column="1"  Grid.Row="1"
-                       Margin="0,0,92,0" Grid.ColumnSpan="3" Background="#FF490000"/>
+                       Margin="0,0,92,0" Grid.ColumnSpan="3"/>
 
-            <Label Content="Frontend Dev. Jonathan.j.levercom@gmail.com" FontSize="16" Foreground="Gold"
+            <Label Content="Frontend Dev. Jonathan.j.levercom@gmail.com" FontSize="16" Foreground="Tomato"
                    FontWeight="Bold" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="3" 
-                   Margin="0" Background="#FF300000">
+                   Margin="0">
 
             </Label>
         </Grid>
