@@ -26,26 +26,25 @@
                 <RowDefinition Height="10" />
             </Grid.RowDefinitions>
 
-
-            <Image Source=
+            <Image Source="assets/29 hand.png" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"/>
 
             <TextBlock Text="Welcome To Cribbage" FontSize="36" Foreground="Tomato" FontWeight="Bold" 
-                   VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Margin="0"  />
+                   VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Margin="0"  />
 
             <TextBlock Text="Version 0.0.1" FontSize="16" Foreground="Tomato" FontWeight="Bold"
-                   VerticalAlignment="Bottom" Grid.Column="4" Grid.Row="4"   Grid.ColumnSpan="2" HorizontalAlignment="Right"
-                       Margin="0"/>
+                   VerticalAlignment="Top" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Right" 
+                   Grid.RowSpan="1"/>
 
             <TextBlock Text="Loading....." FontSize="24" Foreground="Tomato" FontWeight="Bold"
-                   VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" 
+                   VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" 
                        Margin="0" HorizontalAlignment="Center" Width="185" />
 
             <Label Content="Backend Dev. Brap1987@gmail.com" FontSize="16" Foreground="Tomato" FontWeight="Bold"
-                   VerticalAlignment="Bottom" Grid.Column="1"  Grid.Row="1"
-                       Margin="0,0,92,0" Grid.ColumnSpan="3"/>
+                   VerticalAlignment="Top" Grid.Column="1"  Grid.Row="1"
+                   Grid.ColumnSpan="3"/>
 
             <Label Content="Frontend Dev. Jonathan.j.levercom@gmail.com" FontSize="16" Foreground="Tomato"
-                   FontWeight="Bold" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="3" 
+                   FontWeight="Bold" Grid.Column="3" Grid.Row="1" VerticalAlignment="top" HorizontalAlignment="Right" Grid.ColumnSpan="3" 
                    Margin="0">
 
             </Label>
