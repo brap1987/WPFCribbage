@@ -7,7 +7,7 @@ using Suits = WPFCribbage.Card.Suits;
 
 namespace WPFCribbage
 {
-    class Deck
+    public class Deck
     {
         private Card[] cards;
 

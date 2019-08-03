@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="Card.cs" />
     <Compile Include="Deck.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="SplashScreen.xaml.cs">
       <DependentUpon>SplashScreen.xaml</DependentUpon>
     </Compile>

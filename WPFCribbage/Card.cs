@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPFCribbage
 {
-    class Card
+    public class Card
     {
         public enum Suits
         {

@@ -28,9 +28,5 @@
         </Border>
        
 
-        <Image Source="C:\Users\brap1\OneDrive\Pictures\Our Wedding 5-27-17\1 (22).jpg"
-               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" >
-        </Image>
-
     </Grid>
 </Window>
