@@ -4,41 +4,85 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Suits = WPFCribbage.Card.Suits;
+using Ranks = WPFCribbage.Card.CardRank;
+using System.Collections;
 
 namespace WPFCribbage
 {
-    class Deck
+    /// <summary>
+    /// The deck of cards use for playing the game. 
+    /// </summary>
+    public class Deck 
     {
-        private Card[] cards;
+        /// <summary>
+        /// Gets the cards that are ready for play
+        /// </summary>
+        public List<Card> DeckofCards { get; set; }
 
+        /// <summary>
+        /// Holds the cards that have been discarded
+        /// </summary>
+        public List<Card> DiscardedCards { get; set; }
+
+        /// <summary>
+        /// The constructor. Builds the deck using suit and rank enums.
+        /// </summary>
         public Deck()
         {
-            cards = new Card[52];  // create an empty card array
-            int index = 0;
+            DeckofCards = new List<Card>();  // create a list where the cards can be held
+            DiscardedCards = new List<Card>(); // create a pile where cards can be discarded
 
             foreach (string suit in Enum.GetNames(typeof(Suits))) // loop through each suit
             {
-                for(int i = 1; i <= 13; i++)  // loop through each rank per suit
+                foreach (var rank in Enum.GetValues(typeof(Ranks))) // loop through each rank
                 {
-                    cards[index] = new Card(i, suit);   // create card using rank and suit values 
+                    DeckofCards.Add(new Card((int)rank, suit));  // add a new card to the deck based on its suit and rank
                 }
             }
         }
 
-        private Card[] Shuffle(Card[] deck)
+        /// <summary>
+        /// Shuffles the deck using Fisher-Yates algorithm. 
+        /// </summary>
+        /// <returns>A shuffled deck of cards</returns>
+        public List<Card> Shuffle()
         {
+            // place all of the cards back into the deck; 
+            DeckofCards.AddRange(DiscardedCards);
+
             // Use Fisher-Yates algorithm to evenly shuffle deck
             Random r = new Random((int)DateTime.Now.ToBinary());  // ensure the seed is changes
-            int n = deck.Length; // number of cards left in the deck
-            while(n > 1)   // loop the deck until all cards have been touched
+            int n = DeckofCards.Count; // number of cards left in the deck
+            while (n > 1)   // loop the deck until all cards have been touched
             {
                 int k = r.Next(n);   // grab a random number where 0 <= k < n
                 n--;                // take one card out of shuffle
-                Card temp = deck[n];  // grab a card
-                deck[n] = deck[k];    // store it in deck[n]'s spot
-                deck[k] = temp;       // store the temp card in deck[k]'s spot
+                Card temp = DeckofCards[n];  // grab a card
+                DeckofCards[n] = DeckofCards[k];    // store it in deck[n]'s spot
+                DeckofCards[k] = temp;       // store the temp card in deck[k]'s spot
             }
-            return deck;   // return the shuffled deck
+            return DeckofCards;   // return the shuffled deck
+        }
+
+        /// <summary>
+        /// Deals a number of cards based on the number specified.
+        /// </summary>
+        /// <param name="numberOfCards">The number of cards you want dealt</param>
+        /// <returns>A list of the cards dealt</returns>
+        public List<Card> Deal(int numberOfCards)
+        {
+            List<Card> DealtCards = new List<Card>();  // create a holding list
+
+            for(int i = 0; i < numberOfCards; i++)  // loop through as many times as cards that are needed
+            {
+                Card drawn = DeckofCards.First();  // draw a card
+
+                DealtCards.Add(drawn);  // put it in the holding list
+
+                DeckofCards.Remove(drawn);  // remove it from the deck
+            }
+
+            return DealtCards;  // return the holding list to the player
         }
     }
 }
