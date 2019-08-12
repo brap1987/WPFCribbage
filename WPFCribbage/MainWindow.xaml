@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFCribbage"
         mc:Ignorable="d"
-        Title="Main Chat" Height="450" Width="800">
+        Title="Main Chat" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowState="Maximized"> 
     <Grid Background="Green">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
@@ -20,17 +20,6 @@
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
         
-        <Border BorderBrush="GhostWhite" BorderThickness="2"
-                Grid.Row="1" Grid.Column="1">
-            <Label x:Name="label1" Content="{Binding Name}" FontSize="48" Foreground="GhostWhite"
-                   VerticalAlignment="Center" HorizontalAlignment="Center" />
-            
-        </Border>
-       
-
-        <Image Source="C:\Users\brap1\OneDrive\Pictures\Our Wedding 5-27-17\1 (22).jpg"
-               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" >
-        </Image>
 
     </Grid>
 </Window>
