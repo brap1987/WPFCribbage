@@ -33,20 +33,44 @@
 
         <!--Emoji will pop open to choose-->
 
-        <Button Content="Emoji" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Margin="10,0,0,10" Height="20" HorizontalAlignment="Left" Width="50"/>
+        <Button Content="Emoji" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Margin="10,0,0,10" Height="20" HorizontalAlignment="Left" Width="55"/>
 
         <!--Gify opens to choose gify-->
 
-        <Button Content="Gify" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Margin="70,0,0,10" Width="50" Height="20"></Button>
+        <Button Content="Gify" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Margin="70,0,0,10" Width="55" Height="20"></Button>
 
         <!--Hit Enter key or click enter to confirm chat typed-->
 
-        <Button Content="Enter" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="1" Margin="0,0,10,10" Width="75" Height="20"></Button>
+        <Button Content="Enter" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,0,10" Width="80" Height="20"></Button>
 
 
         <!--This textblock is where you type your chat message-->
 
         <TextBox Text="Enter Your Chat Message..." Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Margin="130,0,0,10" Width="300" Background="AntiqueWhite" Height="20"></TextBox>
+
+        <!--Search for online users-->
+        
+        <TextBox Text="Search for User" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10" Width="150" Height="20"></TextBox> 
+
+        <!--Join game in place of bot??-->
+        
+        <Button Content="Join Game" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Margin="10,0,50,10" Height="20" HorizontalAlignment="Left" Width="100"/>
+
+        <!--Random Matchmaking?-->
+        
+        <Button Content="Search For Game" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Margin="10,0,0,10" Height="20" HorizontalAlignment="Center" Width="200"/>
+
+        <!--Screen Resolution, Sound, ETC...-->
+        
+        <Button Content="Options" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Grid.ColumnSpan="1" Margin="10,0,10,10" Height="20" HorizontalAlignment="Right" Width="100"/>
+        
+        <!--Offer For Ads/Donations Maybe-->
+
+        <Button Content="Click To Donate Or Advertise" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1" VerticalAlignment="Bottom" Margin="10,0,0,10" Height="20" HorizontalAlignment="Center" Width="200"/>
+        
+        <!--Click to see other players stats ets-->
+
+        <Button Content="Inspect Player" Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.ColumnSpan="1" Margin="0,0,10,10" Width="80" Height="20"></Button>
 
     </Grid>
 </Window>
