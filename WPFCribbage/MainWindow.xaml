@@ -19,19 +19,18 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
+        
+        <Border BorderBrush="GhostWhite" BorderThickness="2"
+                Grid.Row="1" Grid.Column="1">
+            <Label x:Name="label1" Content="{Binding Name}" FontSize="48" Foreground="GhostWhite"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" />
+            
+        </Border>
+       
 
-        <TextBlock Text="Main Chat Box" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1"></TextBlock>
-
-        <TextBlock Text="Typing, Emoji List, Gfy Etc...." FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="1"></TextBlock>
-
-        <TextBlock Text="Users Online" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1"></TextBlock>
-
-        <TextBlock Text="Advertising Maybe?" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1"></TextBlock>
-
+        <Image Source="C:\Users\brap1\OneDrive\Pictures\Our Wedding 5-27-17\1 (22).jpg"
+               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" >
+        </Image>
 
     </Grid>
 </Window>
