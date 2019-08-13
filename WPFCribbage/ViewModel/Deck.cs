@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Suits = WPFCribbage.Card.Suits;
 using Ranks = WPFCribbage.Card.CardRank;
-using System.Collections;
+using System.ComponentModel;
 
-namespace WPFCribbage
+namespace WPFCribbage 
 {
+    
     /// <summary>
-    /// The deck of cards use for playing the game. 
+    /// The deck of cards used for playing the game. 
     /// </summary>
-    public class Deck 
+    public class Deck : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Handles the notifying of property change.
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
         /// <summary>
         /// Gets the cards that are ready for play
         /// </summary>
@@ -40,6 +45,8 @@ namespace WPFCribbage
                 }
             }
         }
+
+        
 
         /// <summary>
         /// Shuffles the deck using Fisher-Yates algorithm. 

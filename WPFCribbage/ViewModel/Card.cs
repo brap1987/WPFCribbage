@@ -1,12 +1,18 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace WPFCribbage
 {
     /// <summary>
     /// An individual card that is placed in the deck
     /// </summary>
-    public class Card
+    public class Card : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Handles the notifying of property change.
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
         /// <summary>
         /// The stored number value of the card. 1,2,3...
         /// </summary>
@@ -27,6 +33,7 @@ namespace WPFCribbage
             Clubs,
             Diamonds
         }
+
         /// <summary>
         /// the enum of the rank of the cards
         /// </summary>
@@ -57,6 +64,8 @@ namespace WPFCribbage
             RankValue = rankValue;  // the rank
             Suit = suit;    /// the suit
         }
+
+        
 
         /// <summary>
         /// Override the ToString method to allow the return of "Rank of Suit" string instead. 
