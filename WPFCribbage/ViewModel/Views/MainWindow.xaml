@@ -27,7 +27,7 @@
 
         <TextBlock Text="Chat, Emoji ETC" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2"></TextBlock>
 
-        <TextBlock Text="User Namelist" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1"></TextBlock>
+        <TextBlock Text="User Name" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1"></TextBlock>
 
         <TextBlock Text="Ads???" FontSize="48" FontWeight="Bold" Foreground="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="2"></TextBlock>
 
