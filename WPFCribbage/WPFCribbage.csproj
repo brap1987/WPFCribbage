@@ -78,7 +78,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\Views\MainWindow.xaml">
+    <Page Include="ViewModel\Views\MainLobby.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -86,8 +86,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewModel\Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="ViewModel\Views\MainLobby.xaml.cs">
+      <DependentUpon>MainLobby.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ViewModel\Views\SplashScreen.xaml">
