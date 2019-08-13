@@ -46,7 +46,7 @@
 
         <!--This textblock is where you type your chat message-->
 
-        <TextBlock Text="Enter Your Chat Message..." Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Margin="130,0,0,10" Width="300" Background="AntiqueWhite" Height="20"></TextBlock>
+        <TextBox Text="Enter Your Chat Message..." Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Margin="130,0,0,10" Width="300" Background="AntiqueWhite" Height="20"></TextBox>
 
     </Grid>
 </Window>
